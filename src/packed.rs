@@ -437,14 +437,12 @@ where
 //       ...it's going to be a lot of type-level programming.
 //              - ML
 
+// FIXME: This should be for Cons<V, Rest>, like the Packed impl
 impl<A, B, Rest> Packable for Cons<A, Cons<B, Rest>>
 where
     A: Packable,
     B: Packable,
     Rest: Packable,
-    // yeuch, two equality bounds. Having Cons<A, Nil> as a base case sucks.
-    // Unfortunately, we can't put bounds on Cons<B, Rest> here or else the
-    //  compiler poops its pants. - ML
     B::Vector: Packed<Width=<A::Vector as Packed>::Width>,
     Rest::Vector: Packed<Width=<A::Vector as Packed>::Width>,
 {
