@@ -31,3 +31,10 @@ The toughest question is deciding where to draw the line between which APIs/meth
 * **Just individual SIMD vectors:** Currently there's very little that is only implemented on these.
 * **The above plus VLists:** Currently there's nothing exclusively implemented for these, I just use them as primitive building blocks for implementing traits on other types. (every impl is eventually at some point backed by an impl on VLists or a single vector)
 * **The above plus user-defined types:** This is where I put most functionality currently. For instance, Packed is implemented on custom user types.  Maybe this is too much, as evidenced by the ugly hacks like `PackedGats` that were necessary to make it work.
+
+
+### So... iterators?
+
+uh... heh... didn't get that far yet. `X_X`
+
+(and of course, that's the greatest design challenge, so without it I'm not sure how much this prototype is worth!)
