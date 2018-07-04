@@ -21,7 +21,6 @@ and **smaller changes:**
 * `scalar_reduce` takes `self` instead of `&self` due to the above
 * **Important:** `replace` on std vector types does not modify the original value, so it should not take `&mut self`.
 * Widths have type-level integers associated with them so that they can be equated and compared.
-* `SimdObject::Scalar` lost it's `Packable` bound (I'm not sure why it was there)
 
 ### Troublesome design questions
 
