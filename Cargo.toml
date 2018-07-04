@@ -1,0 +1,7 @@
+[package]
+name = "zip-simd"
+version = "0.1.0"
+authors = ["Michael Lamparski <diagonaldevice@gmail.com>"]
+
+[dependencies]
+faster = { git = "https://github.com/AdamNiederer/faster", rev = "20269e19bb95" }
