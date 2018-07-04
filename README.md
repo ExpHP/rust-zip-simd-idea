@@ -7,7 +7,6 @@ Just because I find it easier to start fresh while learning the design of a libr
 Of course, this has some obvious downsides:
 
 * There's no guarantee that any of the stuff I *haven't* yet incorporated will fit into the design.
-  * (indeed, the current design has already gone through numerous evolutions as I incorporated more functionality from the original crate, and it will inevitably go through more)
 * It is more difficult to compare the design to the original.
 
 To help address the latter point, here's a laundry list of **big changes:**
